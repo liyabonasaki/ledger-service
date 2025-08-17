@@ -47,10 +47,10 @@ src
 
 ###  Clone the Repository
 
-``
-git clone https://github.com/yourusername/ledger-service.git
+```aidl
+git clone https://github.com/liyabonasaki/ledger-service.git
 cd ledger-service
-``
+```
 
 ### Manual Build & Run
 
@@ -72,12 +72,7 @@ docker build -t ledger-service .
 
 Run the container inside the network:
 ```aidl
-docker run -d \
-  --name ledger-service \
-  --network fintech-network \
-  -p 8081:8081 \
-  ledger-service
-
+docker run -d --name ledger-service --network fintech-network -p 8081:8081 ledger-service
 ```
 
 Verify it’s running:
